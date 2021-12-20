@@ -1,0 +1,180 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec 15 10:55:01 2021
+
+@author: PC
+"""
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- 
+<center>
+
+    <form method="POST">
+    <h1 style="color:black;">TESTE</h1>
+    <input type="submit" value="Run Model"></input>
+    </form>
+
+
+</center> 
+-->
+
+
+
+
+<body>
+
+
+<!--
+
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 5;
+  bottom: 20;
+
+  padding-top: 20px
+  padding-bottom: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+</style>
+-->
+
+<!--
+<div class="split left">
+  <div class="centered">
+    {% for table in tables[:1] %}
+        <!-- {{titles[loop.index]}} -->
+        {{ table|safe }}
+    {% endfor %}
+ 
+-->    
+    <div class ="content2">
+        <h1>Choose the Players:</h1>
+        <form method="POST">
+            <label>Player 1</label>
+            <input type="text" name="feature 1" id="feature_1"</input>
+            <br>
+            <br>
+            <label>Player 2</label>
+            <input type="text" name="feature 2" id="feature_2"</input>
+            <br>
+            <br>
+            <label>Player 3</label>
+            <input type="text" name="feature 3" id="feature_3"</input>
+            <br>
+            <br>
+            <label>Player 4</label>
+            <input type="text" name="feature 4" id="feature_4"</input>
+            <br>
+            <br>
+            <label>Player 5</label>
+            <input type="text" name="feature 4" id="feature_5"</input>
+            <br>
+            <br>
+            
+        </form>
+    </div>
+    
+    
+    <!--
+        <select name= colours method="GET" action="/">
+            {% for colour in colours %}
+            <option value= "{{colour}}" SELECTED>{{colours}}</option>"
+            {% endfor %}
+        </select>
+    -->
+    
+  </div>
+</div>
+
+<!--
+<div class="split right">
+  <div class="centered">
+    {% for table in tables[1:] %}
+        <!-- {{titles[loop.index]}} -->
+        {{ table|safe }}
+    {% endfor %}
+
+-->
+  
+      <div class ="content2">
+        <h1>Choose the Players:</h1>
+        <form method="POST">
+            <label>Player 1</label>
+            <input type="text" name="feature 6" id="feature_6"</input>
+            <br>
+            <br>
+            <label>Player 2</label>
+            <input type="text" name="feature 7" id="feature_7"</input>
+            <br>
+            <br>
+            <label>Player 3</label>
+            <input type="text" name="feature 8" id="feature_8"</input>
+            <br>
+            <br>
+            <label>Player 4</label>
+            <input type="text" name="feature 9" id="feature_9"</input>
+            <br>
+            <br>
+            <label>Player 5</label>
+            <input type="text" name="feature 10" id="feature_10"</input>
+            <br>
+            <br>
+            <input type="submit" value="Run Model"></input>
+        </form>
+        {% for result in results %}
+        <h2>The result of our prediction is {{result}}</h2>
+        {% endfor %}
+
+    </div>
+   </div>
+</div>
+     
+
+     
+</body>
+
+
+
+</html> 
+
+
+
+
+
+

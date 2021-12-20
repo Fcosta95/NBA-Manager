@@ -1,0 +1,119 @@
+
+<style>
+#container {
+    width:960px;
+    margin:20px auto;
+}
+
+#content {
+    float:left;
+    left: 0;
+
+}
+
+#sidebar {
+    float:left;
+    right: 0;
+
+}
+
+#footer {
+    clear:both;
+}
+</style>
+
+<div id="container">
+    <div id="header">
+        header content here
+    </div>
+    
+    <div id="content">
+        <div class="centered">
+            {% for table in tables[:1] %}
+                {{titles[loop.index]}}
+                {{ table|safe }}
+            {% endfor %}
+    
+    
+            <div class ="content2">
+                <h1>Machine Learning Model</h1>
+                <form method="POST">
+                    <label>sepal length (cm)</label>
+                    <input tyoe="text" name="feature 1" id="feature_1"</input>
+                    <br>
+                    <br>
+                    <label>sepal width (cm)</label>
+                    <input tyoe="text" name="feature 2" id="feature_2"</input>
+                    <br>
+                    <br>
+                    <label>petal length (cm)</label>
+                    <input tyoe="text" name="feature 3" id="feature_3"</input>
+                    <br>
+                    <br>
+                    <label>petal width (cm)</label>
+                    <input tyoe="text" name="feature 4" id="feature_4"</input>
+                    <br>
+                    <br>
+                    
+                </form>
+            </div>
+    <!--
+        <select name= colours method="GET" action="/">
+            {% for colour in colours %}
+            <option value= "{{colour}}" SELECTED>{{colours}}</option>"
+            {% endfor %}
+        </select>
+    -->
+    
+        </div>
+    </div>
+    
+    <div id="sidebar">
+        <div class="centered">
+            {% for table in tables[1:] %}
+                {{titles[loop.index]}}
+                {{ table|safe }}
+            {% endfor %}
+    
+    
+            <div class ="content2">
+                <h1>Machine Learning Model</h1>
+                <form method="POST">
+                    <label>sepal length (cm)</label>
+                    <input tyoe="text" name="feature 1" id="feature_1"</input>
+                    <br>
+                    <br>
+                    <label>sepal width (cm)</label>
+                    <input tyoe="text" name="feature 2" id="feature_2"</input>
+                    <br>
+                    <br>
+                    <label>petal length (cm)</label>
+                    <input tyoe="text" name="feature 3" id="feature_3"</input>
+                    <br>
+                    <br>
+                    <label>petal width (cm)</label>
+                    <input tyoe="text" name="feature 4" id="feature_4"</input>
+                    <br>
+                    <br>
+                    <input type="submit" value="Run Model"></input>
+                </form>
+            </div>
+    <!--
+        <select name= colours method="GET" action="/">
+            {% for colour in colours %}
+            <option value= "{{colour}}" SELECTED>{{colours}}</option>"
+            {% endfor %}
+        </select>
+    -->
+    
+        </div>
+    </div>
+    
+    <div id="footer">
+        
+        <center>
+            <input type="submit" value="Run Model"></input>
+        </center>
+        
+    </div>
+</div>

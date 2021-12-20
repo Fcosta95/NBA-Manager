@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.bg {
+  background-color: black;
+}
+
+body {
+  font-family: Arial;
+  color: white;
+}
+
+<!-- /* Create two equal columns that floats next to each other */ -->
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 700px; /* Should be removed. Only for demonstration */
+  
+}
+
+<!-- /* Clear floats after the columns */ -->
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
+
+<!--
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 5;
+  bottom: 20;
+
+  padding-top: 20px
+  padding-bottom: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #1d428a;
+}
+
+.right {
+  right: 0;
+  background-color: #c8102e;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+</style>
+-->
+
+<head>
+  <meta charset="utf-8">
+  <img src="{{url_for('static', filename='NBA Logo.jpg')}}" align="left"  width="90"> 
+  <img src="{{url_for('static', filename='NBA Logo_Flip.jpg')}}" align="right"  width="90"> 
+  <title>NBA Manager</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  
+  <center>
+  <h1>NBA Manager</h1>
+  </center>
+  
+</head>
+<body style="background-color:black">
+
+<div class="row"> 
+<center> 
+      <div class="column" style="background-color: #1d428a;">   
+
+        <div class="Team A">
+        
+        {% if tables[0] %}
+            {{ tables[0]|safe }}
+        {% endif %}
+    
+            <h1>Choose Player</h1>
+            <form method="POST">
+                <label>Player 1</label>
+                <input type="text" name="Player A 1" id="feature_1"</input>
+                <br>
+                <br>
+                <label>Player 2</label>
+                <input type="text" name="Player A 2" id="feature_2"</input>
+                <br>
+                <br>
+                <label>Player 3</label>
+                <input type="text" name="Player A 3" id="feature_3"</input>
+                <br>
+                <br>
+                <label>Player 4</label>
+                <input type="text" name="Player A 4" id="feature_4"</input>
+                <br>
+                <br>
+                <label>Player 5</label>
+                <input type="text" name="Player A 5" id="feature_4"</input>
+                <br>
+                <br>
+        </div>
+      </div>  
+    
+</center>   
+
+<center>    
+    <div class="column" style="background-color: #c8102e;">
+        <div class="Team B">
+        
+        {% if tables[1] %}
+            {{ tables[1]|safe }}
+        {% endif %}
+        
+            <h1>Choose Player</h1>
+                <label>Player 1</label>
+                <input type="text" name="Player B 6" id="feature_1"</input>
+                <br>
+                <br>
+                <label>Player 2</label>
+                <input type="text" name="Player B 7" id="feature_2"</input>
+                <br>
+                <br>
+                <label>Player 3</label>
+                <input type="text" name="Player B 8" id="feature_3"</input>
+                <br>
+                <br>
+                <label>Player 4</label>
+                <input type="text" name="Player B 9" id="feature_4"</input>
+                <br>
+                <br>
+                <label>Player 5</label>
+                <input type="text" name="Player B 10" id="feature_4"</input>
+                <br>
+                <br>
+                <!-- <input type="submit" value="Run Model"></input></a> -->
+            
+            
+
+    
+        </div>
+    </div>
+    
+</center>
+</div>
+
+<center>
+
+            
+            
+            <input type="image" src="{{url_for('static', filename='nba.png')}}" align="middle"  width="50">
+            <!-- <input type="submit" value="Start Game"></input> -->
+
+            {% for result in results %}
+            <h2>{{result}}</h2>
+            {% endfor %}  
+</center> 
+            </form>
+</body>
+</html>
+
+
+
+
+
+

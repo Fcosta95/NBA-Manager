@@ -1,0 +1,28 @@
+GP - Games PLayed			- Removed
+MPG - Minutes per Game			- Removed
+FGM - Field Goals Made
+FGA - Field Goals Attempted		- Removed
+FG% - Field Goals Percentage
+3PM - 3 Pts Made
+3PA - 3 Pts Attempt			- Removed
+3P% - 3 Pts Percentage
+FTM - Free Throws Made
+FTA - Free Throws Attempt		- Removed
+FT% - Free Throws Percentage
+TOV - TurnOver
+PF - Personal Fouls
+ORB - Offenive Rebound
+DRB - Deffensive Rebound
+RPG - Rebounds Per Game
+APG - Assists Per Game
+SPG - Steals Per Game
+BPG - Blocks Per Game
+PPG - Points Per Game
+
+FGM
+Cluster1 - 6.8 --> 10.4
+Cluster2 - 3.8 --> 8
+Cluster3 - 3 --> 0
+Cluster4 - 4.4 --> 7.9 
+Cluster5 - 2.1 --> 4.6
+
